@@ -1,0 +1,383 @@
+@import url('https://fonts.googleapis.com/css2?family=Quando&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Quando&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Quando', serif;
+    scroll-behavior: smooth;
+}
+
+div {
+    display: block;
+}
+
+a { 
+    text-decoration: none;
+    display: block;
+    color: rgb(255, 255, 255);
+    font-size: 15.2061px;
+    transition: ease-in-out 0.3s;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+h2  {
+        font-family: 'Press Start 2P', cursive;
+        font-size: 45px;
+        color: white;
+        text-align: center;
+}
+    
+.container {
+    height: 100%;
+}
+    /* Cabeçalho */
+
+#barra-cabecalho { 
+        width: 100%;
+        background: rgba(196, 196, 196, 0.11);
+        backdrop-filter: blur(10px);
+        position: fixed;
+        top: 0;
+        z-index: 1;
+        border-bottom: solid 1px rgba(255, 255, 255, 0.452);
+        
+ }
+
+.cabecalho {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    opacity: .8;
+    max-height: 100px;
+    
+}
+.centralizador {
+   max-width: 1000px;
+    margin: 0 auto;
+    opacity: .8;
+}
+
+.logo-cabecalho {
+    padding: 5px 0;
+}
+
+.logo-cabecalho img {
+    width: min(50vw, 150px);
+    height: 130px;
+    margin: -25px 0px;
+}
+
+.menu-nav{
+    width: 50%;
+}
+
+.menu-nav a {
+    text-decoration: none;
+    display: block;
+    color: rgb(255, 255, 255);
+    font-size: 15.2061px;
+    transition: ease-in-out 0.3s;
+}
+
+.menu-nav a:hover{
+    color: rgb(53, 39, 40);
+}
+
+.menu-nav ul {list-style: none;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+/* Section Inicio */    
+
+#inicio{
+    background: linear-gradient(63.13deg, #03191e 51.04%, #8b5742 51.05%);
+    height: 100vh;
+
+}
+
+.container-inicio{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.apresentacao {
+    max-width: 741px;
+    color: white;
+}
+.descricao {
+    font-size: 25px;
+    grid-area: descricao;
+}
+
+.descricao p{
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    
+}
+
+.meu-nome{
+    font-size: 50px;
+}
+
+.meu-nome::after{
+    content: '|';
+    margin-left: 5px;
+    opacity: 1;
+    animation: pisca .7s infinite;
+}
+
+.linkedin{
+    width: 479px;
+    height: 85px;
+    background-color: #8b5742;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 62px;
+}
+
+.linkedin a{
+    width: 100%;
+    padding: 25px 0;
+}
+.link {
+    font-size: 25px;
+    width: 50%;
+    text-align: center;
+    padding: 12px 0;
+    transition: ease-in-out 0.3s;
+}
+
+.link a:hover{
+        letter-spacing: 5px;
+        color: white;
+}
+
+.linkedin a:hover {
+    color: rgb(53, 39, 40);
+}
+
+.imagem-inicio {
+    width: 300px;
+    grid-area: desenho;
+}
+
+.desenho {
+    width: 100%;
+    position: relative;
+    animation: desenhoAnimacao 2.1s infinite alternate-reverse linear;
+}
+    /* Section Sobre Mim */
+
+ #sobre-mim{
+     width: 100%;
+     background-color: #042229;
+}
+
+.container-sobre-mim p{
+    text-indent: 30px;
+    font-size: 25px;
+     max-width: 1600px;
+    color: white;
+    line-height: 35px;
+        
+}  
+
+.container-sobre-mim{
+    display: flex;
+     flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 67px;
+    max-width: 1064px;
+    margin: 0 auto;
+     height: 100vh;
+}
+
+    /* Section Projetos */
+
+#projetos{
+     background-color: #03191e;
+      padding-top: 93px;
+ }
+
+
+ .container-projetos{    
+     max-width: 1600px;
+    margin: 0 auto;
+}
+
+.container-projetos h2{
+    padding-bottom: 70px;
+}
+
+
+.janelas-projeto{
+    display: flex;
+    flex-wrap: wrap;
+     gap: 29.5px;
+    width: 100%;
+     justify-content: center;
+}
+
+.pro{
+     background-color: #C4C4C4;
+     height: 195px;
+    width: 310px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    overflow: hidden;
+    transition: ease-in-out 0.3s;
+}
+
+.pro div p {
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 20px;
+    color: #C4C4C4;
+}
+
+    .pro:hover {
+    letter-spacing: 5px;
+}   
+
+.pro div {
+    background-color: #705656;
+    width: 1000px;
+    text-align: center;
+    padding: 5% 0;
+    transform: rotate(-50deg);
+}
+
+.link-projetos{
+    text-align: center;
+    margin: 0 auto;
+    padding-top: 35px;
+    padding-bottom: 93px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    gap: 35px;
+}
+
+button {
+    padding: 10px 100px;
+    border-radius: 25px;
+    cursor: pointer;
+    color: white;
+    background-color: #493737;
+    border: none;
+    transition: ease-in-out 0.3s;
+}
+
+button:hover {
+    background-color: #a16c60;
+}
+
+/* Section habilidades */
+
+#habilidades{
+    background-color: #042229;
+     padding-top: 93px;
+     width: 100%
+
+     
+}
+
+.habilidades{
+    max-width: 1600px;
+    margin: 0 auto;
+    height: 200px;
+
+
+}
+
+.habilidades h2{
+    text-align: center;
+
+}
+
+.conteiner-skills {
+    display: flex;
+    justify-content: center;
+    flex-direction: row ;
+    gap: 60px;
+    max-width: 100%;
+    padding-bottom: 200px;
+}
+
+.skill-box {
+    height: 106px;
+    width: 106px;
+    background-color: #C4C4C4;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: ease 0.3s;
+}
+
+/* Footer */
+
+.footer {
+    width: 100%;
+    background-color:#03191e;
+}
+
+.footer-conteiner {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contato-creditos {
+    color: white;
+    font-family: 'Quando', serif;
+    font-size: 15px;
+    padding: 10px 0;
+}
+
+
+@keyframes desenhoAnimacao {
+    from{ 
+        top: -15px
+     }
+    to{
+        top: 25px;
+    }
+}
+
+@keyframes pisca {
+    0%, 100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+}
+
